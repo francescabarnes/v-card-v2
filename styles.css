@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,100&display=swap");
+@font-face {
+  font-family: "Bridga Goldeni";
+  src: url(Bridga\ Goldeni.otf);
+}
+
+body {
+  margin: 0px;
+  border: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.vcardcontainer {
+  display: flex;
+}
+
+.left_block {
+  background-color: #ffffff;
+  height: 100vh;
+  width: 25vw;
+  padding: 30px;
+  color: rgb(125, 13, 13);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 25vw;
+}
+
+.flex-column-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.icons i {
+  margin-right: 20px;
+}
+
+.middle_block {
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  height: 10%;
+  width: 40%;
+  background-color: #002626;
+}
+
+.photo {
+  width: fit-content;
+  height: 200px;
+}
+
+.right_block {
+  width: 45vw;
+  background-color: #002626;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10vh;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: 0.2em;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu i {
+  color: blueviolet;
+}
+
+.content {
+  font-family: Bridga Goldeni;
+}
+
+.content span {
+  color: #e7a095;
+  font-weight: bold;
+}
+
+#desc {
+  font-family: "Montserrat", sans-serif;
+}
+
+.b1 {
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 15px 20px;
+  border-radius: 55px;
+  border: 1px solid white;
+}
+
+.b2 {
+  color: #e7a095;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 15px 20px;
+  border-radius: 55px;
+  border: 1px solid #e7a095;
+}
+
+.title-word {
+  animation: color-animation 4s linear infinite;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.title-word-1 {
+  --color-1: #ff7112;
+  --color-2: #e578a9;
+  --color-3: #68bfdf;
+}
+
+.title-word-2 {
+  --color-1: #ffb07c;
+  --color-2: #002626;
+  --color-3: #002626;
+}
+
+.title-word-3 {
+  --color-1: #002626;
+  --color-2: #e6bace;
+  --color-3: #002626;
+}
+
+.title-word-4 {
+  --color-1: #002626;
+  --color-2: #002626;
+  --color-3: #88bbcb;
+}
+
+@keyframes color-animation {
+  0% {
+    color: var(--color-1);
+  }
+  32% {
+    color: var(--color-1);
+  }
+  33% {
+    color: var(--color-2);
+  }
+  65% {
+    color: var(--color-2);
+  }
+  66% {
+    color: var(--color-3);
+  }
+  99% {
+    color: var(--color-3);
+  }
+  100% {
+    color: var(--color-1);
+  }
+}
+
+footer {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .left_block {
+    display: none;
+  }
+
+  .middle_block {
+    display: none;
+  }
+
+  .right_block {
+    display: flex;
+    width: 100vw;
+    padding: 45px;
+  }
+
+  h1 {
+    font-size: 2em;
+    text-align: right;
+  }
+
+  .title-word {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+
+  #desc {
+    text-align: center;
+  }
+
+  .button {
+    display: flex;
+    justify-content: space-around;
+  }
+  footer {
+    background-color: #002626;
+    display: flex;
+    color: white;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 860px) {
+  .vcardcontainer {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  .left_block {
+  }
+
+  .middle_block {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .right_block {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .button {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3em 0em;
+  }
+
+  #desc {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 860px) and (max-width: 1280px) {
+  .logo {
+    width: 10em;
+  }
+
+  .right_block {
+    padding: 2em;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  #desc {
+    text-align: center;
+  }
+
+  .button {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3em 0em;
+  }
+
+  footer {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .logo {
+    width: 10em;
+  }
+
+  #desc {
+    text-align: center;
+  }
+
+  .button {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3em 0em;
+  }
+}
